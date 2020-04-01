@@ -1,11 +1,9 @@
-// r0LW54zer1LDuErzvplhjX3ntNNnqbaU
-
-let wordAPI = "https://random-word-api.herokuapp.com/word?number=1"
-let giphyAPI = "https://api.giphy.com/v1/gifs/search?api_key=r0LW54zer1LDuErzvplhjX3ntNNnqbaU&q="
-
 callAPI()
 
 function callAPI() {
+    let wordAPI = "https://random-word-api.herokuapp.com/word?number=1"
+    let giphyAPI = "https://api.giphy.com/v1/gifs/search?api_key=r0LW54zer1LDuErzvplhjX3ntNNnqbaU&q="
+
     fetch(wordAPI)
     .then(response => {
         return response.json()
